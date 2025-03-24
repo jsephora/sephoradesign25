@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import background from './Assets/dark-triangles.png'
+import logo from './Assets/sdLogo-portrait.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          I have just updated this at 10:24am AEST
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div
+      className='App'
+      style={{
+        backgroundImage: `url(${background})`,
+        height: '100vh',
+        // marginTop: '0px',
+      }}
+    >
+      <div className='centerContent'>
+        <img src={logo} alt='sephora design logo'
+        style={{width: '500'}}/>
+        {/* <h1
+          style={{
+            color: 'white',
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Sephora Design is under construction
+        </h1> */}
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
